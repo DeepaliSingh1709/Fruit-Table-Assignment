@@ -39,17 +39,17 @@ const TableList = ({ itemList, filter,add,addData,sort}) => {
                         <tr>
                             <th rowSpan="2"><h5 onClick={sortdata.bind(null,'id')}>ID {(current=='id')?(sortstate['id']===1)?<span>&#8679;</span>:<span>&#8681;</span>:null}</h5><input onChange={(e)=>{filter(e.target.value,'id')}}/></th>
                             <th rowSpan="2"><h5 onClick={sortdata.bind(null,'name')}>Name{(current=='name')?(sortstate['name']===1)?<span>&#8679;</span>:<span>&#8681;</span>:null}</h5><input onChange={(e)=>{filter(e.target.value,'name')}}/></th>
-                            <th rowSpan="2"><h5 onClick={sortdata.bind(null,'genus')}>Genus</h5><input onChange={(e)=>{filter(e.target.value,'genus')}}/></th>
-                            <th rowSpan="2"><h5 onClick={sortdata.bind(null,'family')}>Family</h5><input onChange={(e)=>{filter(e.target.value,'family')}}/></th>
-                            <th rowSpan="2"><h5 onClick={sortdata.bind(null,'order')}>Order</h5><input onChange={(e)=>{filter(e.target.value,'order')}}/></th>
+                            <th rowSpan="2"><h5 onClick={sortdata.bind(null,'genus')}>Genus {(current=='genus')?(sortstate['genus']===1)?<span>&#8679;</span>:<span>&#8681;</span>:null}</h5><input onChange={(e)=>{filter(e.target.value,'genus')}}/></th>
+                            <th rowSpan="2"><h5 onClick={sortdata.bind(null,'family')}>Family {(current=='family')?(sortstate['family']===1)?<span>&#8679;</span>:<span>&#8681;</span>:null}</h5><input onChange={(e)=>{filter(e.target.value,'family')}}/></th>
+                            <th rowSpan="2"><h5 onClick={sortdata.bind(null,'order')}>Order {(current=='order')?(sortstate['order']===1)?<span>&#8679;</span>:<span>&#8681;</span>:null}</h5><input onChange={(e)=>{filter(e.target.value,'order')}}/></th>
                             <th colSpan = "5"><h5>Nutrition</h5></th>
                         </tr>
                         <tr>
-                            <th><h5 onClick={sortdata.bind(null,'carbohydrates')}>Carbohydrates</h5><input onChange={(e)=>{filter(e.target.value,'carbohydrates')}}/></th>
-                            <th><h5 onClick={sortdata.bind(null,'protien')}>Protein</h5><input onChange={(e)=>{filter(e.target.value,'protien')}}/></th>
-                            <th><h5 onClick={sortdata.bind(null,'fat')}>Fat</h5><input onChange={(e)=>{filter(e.target.value,'fat')}}/></th>
-                            <th><h5 onClick={sortdata.bind(null,'calories')}>Calories</h5><input onChange={(e)=>{filter(e.target.value,'calories')}}/></th>
-                            <th><h5 onClick={sortdata.bind(null,'sugar')}>Sugar</h5><input onChange={(e)=>{filter(e.target.value,'sugar')}}/></th>
+                            <th><h5 onClick={sortdata.bind(null,'carbohydrates')}>Carbohydrates {(current=='carbohydrates')?(sortstate['carbohydrates']===1)?<span>&#8679;</span>:<span>&#8681;</span>:null}</h5><input onChange={(e)=>{filter(e.target.value,'carbohydrates')}}/></th>
+                            <th><h5 onClick={sortdata.bind(null,'protien')}>Protein {(current=='protien')?(sortstate['protien']===1)?<span>&#8679;</span>:<span>&#8681;</span>:null}</h5><input onChange={(e)=>{filter(e.target.value,'protien')}}/></th>
+                            <th><h5 onClick={sortdata.bind(null,'fat')}>Fat {(current=='fat')?(sortstate['fat']===1)?<span>&#8679;</span>:<span>&#8681;</span>:null}</h5><input onChange={(e)=>{filter(e.target.value,'fat')}}/></th>
+                            <th><h5 onClick={sortdata.bind(null,'calories')}>Calories {(current=='calories')?(sortstate['calories']===1)?<span>&#8679;</span>:<span>&#8681;</span>:null}</h5><input onChange={(e)=>{filter(e.target.value,'calories')}}/></th>
+                            <th><h5 onClick={sortdata.bind(null,'sugar')}>Sugar {(current=='sugar')?(sortstate['sugar']===1)?<span>&#8679;</span>:<span>&#8681;</span>:null}</h5><input onChange={(e)=>{filter(e.target.value,'sugar')}}/></th>
                         </tr>
                 </thead>
                 
